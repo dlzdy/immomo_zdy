@@ -7,13 +7,50 @@
     android:background="@drawable/pic_index_background"
     tools:context="com.jeenms.momo.WelcomeActivity">
 
-    <RelativeLayout
+    <!-- index_logo, center -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:src="@drawable/pic_index_logo"/>
+    </LinearLayout>
 
-    </RelativeLayout>
+    <!-- action panel, center-bottom-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+             <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="注册"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="登录"/>
+            <ImageButton
+                android:id="@+id/ibtn_about"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_welcome_about_normal"
+                android:layout_weight="1">
+            </ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
