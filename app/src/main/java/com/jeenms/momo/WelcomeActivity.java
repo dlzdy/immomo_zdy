@@ -24,7 +24,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void initViews() {
         //register
-        mBtnRegister = (Button)findViewById(R.id.btn_login);
+        mBtnRegister = (Button)findViewById(R.id.btn_register);
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +32,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
         //login
-        mBtnLogin = (Button) findViewById(R.id.btn_register);
+        mBtnLogin = (Button) findViewById(R.id.btn_login);
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
