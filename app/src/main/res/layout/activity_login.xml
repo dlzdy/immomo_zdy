@@ -15,7 +15,8 @@
         android:orientation="vertical">
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp"
+            android:layout_weight="1">
             <!--  input -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,26 +39,26 @@
             </LinearLayout>
         </ScrollView>
 
-    </LinearLayout>
-    <!--  bottuon -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@drawable/bg_unlogin_bar"
-        android:layout_alignParentBottom="true">
+        <!--  bottuon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_unlogin_bar">
 
-        <Button
-            android:id="@+id/btn_return"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="返回"/>
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="登录"/>
+            <Button
+                android:id="@+id/btn_return"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="返回"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="登录"/>
+        </LinearLayout>
     </LinearLayout>
+
 </RelativeLayout>
