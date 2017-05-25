@@ -28,8 +28,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:hint="手机号码/邮箱地址/陌陌号"
-                    android:textColorHint="@color/colorAccent"
-                    />
+                                       />
+
                 <EditText
                     android:id="@+id/tv_password"
                     android:inputType="textPassword"

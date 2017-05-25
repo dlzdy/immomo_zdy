@@ -1,5 +1,7 @@
 package com.jeenms.momo;
 
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,9 +36,33 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                finish();
                break;
            case R.id.btn_login:
-               //TODO
+               login();
                break;
 
        }
+    }
+
+    /**
+     * 登录操作-->MainTabActivity
+     */
+    private void login() {
+        //“启动任务执行的输入参数”、“后台任务执行的进度”、“后台计算结果的类型”
+        new AsyncTask<Void, Void, Boolean>() {
+
+            @Override
+            protected Boolean doInBackground(Void... voids) {
+                return true;
+            }
+
+            @Override
+            protected void onPostExecute(Boolean result) {
+                super.onPostExecute(result);
+                if (result){
+                    Intent intent = new Intent(LoginActivity.this, MainTabActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        }.execute();
     }
 }
